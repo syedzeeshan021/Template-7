@@ -3,8 +3,8 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardTitle,
   CardHeader,
+  CardTitle, // Ensure CardTitle is imported
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
@@ -46,7 +46,6 @@ export default function Page() {
           </CardContent>
         </Card>
 
-    
         <Card className="w-full lg:w-[852px] h-auto lg:h-[664px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Rental Info</CardTitle>
@@ -109,7 +108,6 @@ export default function Page() {
           </CardContent>
         </Card>
 
-
         <Card className="w-full lg:w-[852px] h-auto lg:h-[596px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Payment Method</CardTitle>
@@ -125,7 +123,6 @@ export default function Page() {
           </CardContent>
         </Card>
 
-      
         <Card className="w-full lg:w-[852px] h-auto lg:h-[484px] flex flex-col justify-around">
           <CardHeader>
             <CardTitle>Confirmation</CardTitle>
@@ -137,16 +134,16 @@ export default function Page() {
           <CardContent className="flex flex-col gap-8">
             <Image src={"/Confirmation.png"} alt="Confirmation" width={804} height={136} />
             <Link href={'/admin'}>
-            <button className="bg-[#3563e9] p-2 text-white rounded-xl w-[140px] h-[56px]">
-              Rent Now
-            </button></Link>
-            
+              <button className="bg-[#3563e9] p-2 text-white rounded-xl w-[140px] h-[56px]">
+                Rent Now
+              </button>
+            </Link>
             <Image src={"/Safe Data.png"} alt="Safe Data" width={548} height={100} />
           </CardContent>
         </Card>
       </div>
       <div className="details w-full flex-shrink-0 lg:w-[40%] order-1 lg:order-2 flex justify-center">
-        <Image src={"/Rental Summary.png"} alt="Rental Summary" width={492} height={568} className=" lg:w-[492px] h-[568px]"  />
+        <Image src={"/Rental Summary.png"} alt="Rental Summary" width={492} height={568} className="lg:w-[492px] h-[568px]" />
       </div>
     </div>
   );
