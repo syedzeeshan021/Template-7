@@ -31,10 +31,10 @@ export default function Page() {
     { title: 'New MG ZS', image: '/NewMG-ZS.png', desc: 'SUV', price: 80.00 },
     { title: 'MG ZX Excite', image: '/MG-ZX-Excite-Sky.png', desc: 'Hatchback', price: 74.00 },
     { title: 'New MG ZS', image: '/NewMG-ZS.png', desc: 'SUV', price: 80.00 },
-    { title: 'MG ZX Exclusive', image: '/suv.png', desc: 'SUV', price: 76.00 },
-    { title: 'New MG ZS', image: '/suv (4).png', desc: 'Sedan', price: 80.00 },
-    { title: 'New MG ZX Excite', image: '/suv.png', desc: 'Sport', price: 74.00 },
-    { title: 'New MG ZS', image: '/suv (4).png', desc: 'Sedan', price: 80.00 },
+    { title: 'MG ZX Exclusive', image: '/MG-ZX-Exclusive.png', desc: 'SUV', price: 76.00 },
+    { title: 'New MG ZS', image: '/NewMG-ZS.png', desc: 'Sedan', price: 80.00 },
+    { title: 'New MG ZX Excite', image: '/MG-ZX-Excite-Sky.png', desc: 'Sport', price: 74.00 },
+    { title: 'New MG ZS', image: '/NewMG-ZS.png', desc: 'Sedan', price: 80.00 },
   ];
 
   const carsToShow = showMore ? cars : cars.slice(0, 8);
